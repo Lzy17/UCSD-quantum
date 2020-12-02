@@ -1,0 +1,100 @@
+LanguageCode: "fr-FR"
+DefaultContentLanguage: "fr"
+Title: "Famille de geeks"
+BaseURL: "http://blog.jesuislibre.org/"
+Theme: "beautifulhugo"
+MetaDataFormat: "yaml"
+
+pygmentsUseClasses: true
+pygmentsUseClasses: true
+pygmentCodeFences: true
+
+taxonomies:
+  tag: "tags"
+  section: "section"
+
+Permalinks:
+  Post: ":slug"
+
+# Rename RSS feed
+outputs:
+  home: ["HTML","RSS"]
+  taxonomy: ["HTML","RSS"]
+
+mediaTypes:
+  "application/rss":
+    suffix: "atom"
+
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
+
+menu:
+  main:
+    - name: "Home"
+      Weight: 1
+      identifier: "home"
+      URL: "/"
+
+    # - name: "Archives"
+    #   Weight: 2
+    #   identifier: "archives"
+    #   URL: "/archives"
+
+    - name: "Tags"
+      Weight: 3
+      identifier: "tags"
+      URL: "/tags"
+
+    - name: "A propos"
+      Weight: 4
+      identifier: "about"
+      URL: "http://bruno.adele.im"
+
+params:
+  subtitle: "Une famille complètement 633<"
+  logo: "img/bruno-avatar-127.jpg"
+  favicon: "img/favicon.ico"
+  commit: "https://github.com/badele/blog.jesuislibre.org/tree/"
+  rss: true
+  rsslimit: 10
+
+  UseChroma: true
+  shortdateformat: "2 Jan"
+  dateformat: "2 Jan 2006"
+
+  comments: true
+  staticman:
+    api: https://api.staticman.net/v2/entry/badele/blog.jesuislibre.org/master/comments
+    pulls: https://github.com/badele/blog.jesuislibre.org/pulls
+    recaptcha:
+      sitekey: "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"
+      secret: "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
+
+  jsl:
+    piwik_id: 4
+    piwik_server: "analytics.jesuislibre.org"
+
+Author:
+  Name: "Bruno Adelé"
+  Website: http://bruno.adele.im
+  Email: bruno@adele.im
+  Twitter: "jesuislibre"
+  Facebook: "bruno.adele"
+  Googleplus: "100723270029692582967"
+  Github: "badele"
+  Linkedin": "brunoadele"
+  Stackoverflow: "users/2015612/bruno-adelé"
+  Youtube: "brunoadele"
+  Soundcloud: "bruno-adele"
+  Spotify: "2166cwmaoshdihdqzhlphsbcy"
+  Instagram: "badele34"
+  Paypal: "brunoadele"
+  Bio: "Passionné d'informatique depuis + de 25 ans, Devops dans une start up Montpelliéraine, utilise et contribue aux logiciels Open Source"
+  Job: "Devops & Geek"
+  Location: "Montpellier - France"
+  Img: /img/bruno.jpg
+  Smallimg: /img/small-bruno.png
+  Link: 'http://bruno.adele.im'
+  Follow: https://twitter.com/jesuislibre

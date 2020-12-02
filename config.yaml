@@ -1,7 +1,7 @@
 LanguageCode: "fr-FR"
 DefaultContentLanguage: "fr"
 Title: "Famille de geeks"
-BaseURL: "http://blog.jesuislibre.org/"
+BaseURL: "/UCSD-quantum"
 Theme: "beautifulhugo"
 MetaDataFormat: "yaml"
 
